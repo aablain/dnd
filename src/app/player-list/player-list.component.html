@@ -1,0 +1,9 @@
+<div *ngFor="let player of players | async">
+  <h2 (click)="goToPlayerPage(player)">{{player.name}}</h2>
+  <h4>{{player.title}}</h4>
+  <span>{{player.health}}</span>
+  <div *ngIf="currentRoute === '/admin'">
+    <hr>
+    <app-edit-player [selectedPlayer]="player"></app-edit-player>
+  </div>
+</div>

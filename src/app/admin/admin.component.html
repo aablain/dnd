@@ -1,0 +1,79 @@
+<div class="">
+  <div>
+    <label>Champion Name: </label>
+    <br>
+    <input #newName>
+  </div>
+
+  <div>
+    <label>Bio: </label>
+    <br>
+    <input #newBio>
+  </div>
+
+  <div>
+    <label>Race: </label>
+    <select #newRace>
+      <option value="Dragonborn" selected="selected">Dragonborn</option>
+      <option value="Dwarf">Dwarf</option>
+      <option value="Hill Dwarf">Hill Dwarf</option>
+      <option value="Mountain Dwarf">Mountain Dwarf</option>
+      <option value="Elf">Elf</option>
+      <option value="High Elf">High Elf</option>
+      <option value="Wood Elf">Wood Elf</option>
+      <option value="Drow">Drow</option>
+      <option value="Gnome">Gnome</option>
+      <option value="Forest Gnome">Forest Gnome</option>
+      <option value="Rock Gnome">Rock Gnome</option>
+      <option value="Deep Gnome">Deep Gnome</option>
+      <option value="Half-Elf">Half-Elf</option>
+      <option value="Half-Orc">Half-Orc</option>
+      <option value="Halfling">Halfling</option>
+      <option value="Lightfoot Halfling">Lightfoot Halfling</option>
+      <option value="Stout Halfling">Stout Halfling</option>
+      <option value="Human">Human</option>
+      <option value="Tiefling">Tiefling</option>
+      <option value="Gensi">Gensi</option>
+      <option value="Goliath">Goliath</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Class: </label>
+    <select #newClas>
+      <option value="Barbarian" selected="selected">Barbarian</option>
+      <option value="Bard">Bard</option>
+      <option value="Cleric">Cleric</option>
+      <option value="Druid">Druid</option>
+      <option value="Monk">Monk</option>
+      <option value="Paladin">Paladin</option>
+      <option value="Ranger">Ranger</option>
+      <option value="Sorcerer">Sorcerer</option>
+      o<option value="Rougue">Rougue</option>
+      <option value="Warlock">Warlock</option>
+      <option value="Warrior">Warrior</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Title: </label>
+    <select #newTitle>
+      <option value="Tank">Tank</option>
+      <option value="DPS">DPS</option>
+      <option value="Healer">Healer</option>
+      <option value="Thief/Scout">Thief/Scout</option>
+      <option value="DM">DM</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Health:</label>
+    <br>
+    <input #newHealth type="number">
+  </div>
+  <button (click)="makeNewCharacter(newName.value, newBio.value, newRace.value, newClas.value, newTitle.value, newHealth.value); newName.value=''; newBio.value=''; newRace.value='Dragonborn'; newClas.value='Barbarian'; newTitle.value='Tank'; newHealth.value='';">Add Player</button>
+</div>
+
+<div>
+  <app-player-list></app-player-list>
+</div>

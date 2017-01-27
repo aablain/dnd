@@ -1,0 +1,32 @@
+{
+  "players" : [
+    {"name": "Urson",
+     "bio": "Bear Man Cub",
+     "race": "Half-Orc",
+     "clas": "Barbarian",
+     "title": "DPS",
+     "health": 22
+   }, {
+    "name": "Chadwell",
+    "bio": "The Noble Guy",
+    "race": "Human",
+    "clas": "Warrior",
+    "title": "Tank",
+    "health": 26
+   }, {
+    "name": "Si-Duck",
+    "bio": "The wise Raven that seeks all knowledge",
+    "race": "High-Elf",
+    "clas": "Wizard",
+    "title": "DPS",
+    "health": 15
+  }, {
+    "name": "Quince",
+    "bio": "Fierce Explorer",
+    "race": "Wood-Elf",
+    "clas": "Barbarian",
+    "title": "DPS",
+    "health": 18
+  }
+  ]
+}
