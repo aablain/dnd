@@ -13,6 +13,7 @@ import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { TitlePipe } from './title.pipe';
+import { SearchPipe } from './search.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     PlayerListComponent,
     AdminComponent,
     EditPlayerComponent,
-    TitlePipe
+    TitlePipe,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

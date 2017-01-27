@@ -6,8 +6,10 @@
   <option value="Thief/Scout">Thief/Scout</option>
   <option value="DM">Dungeon Master</option>
 </select>
+<input [(ngModel)]="term" placeholder="...Search!" class="searchBar">
 
-<div *ngFor="let player of players | async | title:filteringByTitle">
+
+<div *ngFor="let player of players | async | title:filteringByTitle | search:term">
   <h2 (click)="goToPlayerPage(player)">{{player.name}}</h2>
   <h4>{{player.title}}</h4>
   <span>{{player.health}}</span>
