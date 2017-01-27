@@ -25,8 +25,10 @@ goToPlayerPage(clickedPlayer) {
   this.router.navigate(['player', clickedPlayer.$key]);
 }
 
-// onChange(optionFromMenu) {
-//   this.filterByType = optionFromMenu;
-// }
+filteringByTitle: string = "allTitles";
+
+onChange(optionChosenFromMenu) {
+  this.filteringByTitle = optionChosenFromMenu;
+}
 
 }

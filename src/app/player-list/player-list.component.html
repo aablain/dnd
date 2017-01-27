@@ -1,4 +1,13 @@
-<div *ngFor="let player of players | async">
+<select (change)="onChange($event.target.value)">
+  <option value="allTitles" selected="selected">All Champions</option>
+  <option value="Tank">Tank</option>
+  <option value="DPS">DPS</option>
+  <option value="Healer">Healer</option>
+  <option value="Thief/Scout">Thief/Scout</option>
+  <option value="DM">Dungeon Master</option>
+</select>
+
+<div *ngFor="let player of players | async | title:filteringByTitle">
   <h2 (click)="goToPlayerPage(player)">{{player.name}}</h2>
   <h4>{{player.title}}</h4>
   <span>{{player.health}}</span>
