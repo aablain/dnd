@@ -2,13 +2,13 @@
   <div>
     <label>Champion Name: </label>
     <br>
-    <input #newName>
+    <input #newName placeholder="example: Toadfoot Lightwater">
   </div>
 
   <div>
     <label>Bio: </label>
     <br>
-    <input #newBio>
+    <input #newBio placeholder="example: I swim beautifuly">
   </div>
 
   <div>
@@ -69,7 +69,7 @@
   <div>
     <label>Health:</label>
     <br>
-    <input #newHealth type="number">
+    <input #newHealth type="number" placeholder="typically between 15-30">
   </div>
   <button (click)="makeNewCharacter(newName.value, newBio.value, newRace.value, newClas.value, newTitle.value, newHealth.value); newName.value=''; newBio.value=''; newRace.value='Dragonborn'; newClas.value='Barbarian'; newTitle.value='Tank'; newHealth.value='';">Add Player</button>
 </div>
