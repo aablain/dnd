@@ -8,13 +8,14 @@
 </select>
 <input [(ngModel)]="term" placeholder="...Search!" class="searchBar">
 
-
-<div *ngFor="let player of players | async | title:filteringByTitle | search:term">
-  <h2 (click)="goToPlayerPage(player)">{{player.name}}</h2>
-  <h4>{{player.title}}</h4>
-  <span>{{player.health}}</span>
-  <div *ngIf="currentRoute === '/admin'">
-    <hr>
-    <app-edit-player [selectedPlayer]="player"></app-edit-player>
+<div class="playerTiles">
+  <div *ngFor="let player of players | async | title:filteringByTitle | search:term" class="players">
+    <h2 (click)="goToPlayerPage(player)">{{player.name}}</h2>
+    <h4>{{player.title}}</h4>
+    <span>{{player.health}}</span>
+    <div *ngIf="currentRoute === '/admin'">
+      <hr>
+      <app-edit-player [selectedPlayer]="player"></app-edit-player>
+    </div>
   </div>
 </div>

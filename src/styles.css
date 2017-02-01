@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+.playerTiles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.players {
+  width: 48%;
+  margin: 1%;
+  background-color: #888;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+ .players h4 {
+   color: #353535;
+ }
+
+.specificProject h4 {
+  color: #C0392B;
+}
+
+.specificProject p:last-of-type {
+  font-style: italic;
+  color: #C0392B;
+}
+
+.specificProject p:nth-of-type(3) {
+  color: #F1C40F;
+}
+
+.header, footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header span {
+  font-size: 2em;
+  color: #F1C40F;
+}
+
+.header span:last-of-type {
+  color: #C0392B;
+}
+
+
+.header a, footer a {
+  text-decoration: none;
+}
+
+footer a {
+  color: #F1C40F;
+}
