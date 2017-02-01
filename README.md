@@ -5,6 +5,12 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Obtain api-key
+
+1) Obtain firebase key from https://console.firebase.google.com/project/dndroster/overview,
+2) Create api-keys.ts file in src/app folder and
+3) Place corresponding variables in export class entitled masterFirebaseConfig
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
